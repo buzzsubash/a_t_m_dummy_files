@@ -1,0 +1,305 @@
+/* Auth Pages Styling */
+.auth-page {
+    background-color: #FDFCFA;
+    min-height: 80vh; /* Adjusted for section instead of full page */
+    padding: 60px 0;
+}
+
+.auth-container {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.auth-box {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #CDCDCD;
+    width: 30.625rem;
+}
+
+/* Header */
+.auth-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.auth-header h1 {
+    font-size: 36px;
+    color: var(--dim-black);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.auth-header p {
+    color: #64748B;
+    font-size: 16px;
+}
+
+/* Form Styling */
+.auth-form {
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;  /* Added for absolute positioning of forgot password */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dim-black);
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+    margin-top: 4px;  /* Add space between label/forgot password and input */
+}
+
+.form-group input:focus {
+    border-color: var(--clr-ocean-blue);
+    outline: none;
+}
+
+/* Remember Me Row */
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.remember-me label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #64748B;
+}
+
+/* Move forgot password link styling here and update */
+.forgot-password {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: var(--clr-ocean-blue);
+    text-decoration: none;
+}
+
+.form-group.password-group {
+    margin-top: 24px;  /* Add extra space above password group */
+}
+
+/* Submit Button */
+.auth-submit {
+    width: 100%;
+    padding: 12px;
+    background: var(--clr-ocean-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    height: 48px;
+}
+
+.auth-submit:hover {
+    opacity: 0.9;
+}
+
+/* Terms Text */
+.terms-text {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #64748B;
+    text-align: center;
+}
+
+.terms-text a {
+    color: var(--clr-ocean-blue);
+    text-decoration: none;
+}
+
+/* Auth Footer */
+.auth-footer {
+    text-align: center;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.auth-footer p {
+    color: #64748B;
+    font-size: 16px;
+}
+
+.auth-footer a {
+    color: var(--clr-ocean-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Error Messages */
+.auth-errors {
+    background: #FEF2F2;
+    border: 1px solid #DC2626;  /* Changed to darker red for better visibility */
+    border-radius: 8px;
+    padding: 16px;  /* Increased padding */
+    margin-bottom: 24px;
+}
+
+.auth-errors p {
+    color: #DC2626;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;  /* Added font weight */
+    line-height: 1.5;  /* Added line height for better readability */
+}
+
+.form-group input.error-field {
+    border-color: #DC2626;
+    background-color: #FEF2F2;
+}
+
+.error {
+    color: #DC2626;
+    font-size: 13px;
+    margin-top: 6px;
+    display: block;
+    font-weight: 500;  /* Made error messages slightly bolder */
+}
+
+.password-help {
+    color: #64748B;
+    font-size: 13px;
+    margin-top: 6px;
+    display: block;
+}
+
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: WHITE;
+  background-image: none;
+  border: 1px solid #747775;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  height: 48px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 400px;
+  min-width: min-content;
+
+}
+
+.gsi-material-button .gsi-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  width: 20px;
+}
+
+
+.gsi-material-button .gsi-material-button-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gsi-material-button .gsi-material-button-contents {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+
+.gsi-material-button .gsi-material-button-state {
+  -webkit-transition: opacity .218s;
+  transition: opacity .218s;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gsi-material-button:disabled {
+  background-color: #e0e0e0;
+  border-color: #c0c0c0;
+}
+
+.gsi-material-button:disabled .gsi-material-button-contents {
+  opacity: 38%;
+}
+
+.gsi-material-button:disabled .gsi-material-button-icon {
+  opacity: 38%;
+}
+
+.gsi-material-button:not(:disabled):active .gsi-material-button-state,
+.gsi-material-button:not(:disabled):focus .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 12%;
+}
+
+.gsi-material-button:not(:disabled):hover {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+.gsi-material-button:not(:disabled):hover .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 8%;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 24px;
+    }
+
+    .auth-header h1 {
+        font-size: 22px;
+    }
+
+    .auth-header p {
+        font-size: 15px;
+    }
+
+    .form-group input {
+        padding: 10px;
+    }
+}
