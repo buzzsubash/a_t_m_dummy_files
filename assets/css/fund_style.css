@@ -1981,226 +1981,227 @@ footer {
 }
 
 
-        .dashboard-header-container {
-            max-width: 1350px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
+.dashboard-header-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
 
-        .dashboard-main-container {
-            max-width: 1350px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
+.dashboard-main-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
 
-        .stock-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            background: linear-gradient(to right, #FFFFFF, #F8FAFC);
-            border-radius: 16px;
-            border: 1px solid #CDCDCD;
-            padding: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            margin-bottom: 20px;
-        }
+.stock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(to right, #FFFFFF, #F8FAFC);
+    border-radius: 16px;
+    border: 1px solid #CDCDCD;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
 
 
-            /* Style for the 4-grid layout */
+/* Style for the 4-grid layout */
+.fund-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
     .fund-metrics-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-        margin-bottom: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fund-metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dashboard-metrics-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.metrics-section {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #CDCDCD;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.metrics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.metrics-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0;
+    letter-spacing: -0.025em;
+}
+
+.metrics-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.metric-card {
+    background: linear-gradient(to right, #FFFFFF, #F8FAFC);
+    border-radius: 12px;
+    border: 1px solid #CDCDCD;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.metric-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--clr-ocean-blue);
+}
+
+.metric-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+}
+
+.metric-item:last-child {
+    border-bottom: none;
+}
+
+.metric-label {
+    color: #64748B;
+    font-size: 0.875rem;
+}
+
+.metric-value {
+    font-weight: 500;
+    color: #1E293B;
+    font-size: 0.875rem;
+}
+
+.metric-item a {
+    color: var(--clr-ocean-blue);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.metric-item a:hover {
+    opacity: 0.8;
+}
+
+.about-fund {
+    grid-column: span 4;
+    margin-top: 0.5rem;
+}
+
+.metric-description {
+    color: #64748B;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.metric-description p {
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .metrics-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 1200px) {
-        .fund-metrics-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    .about-fund {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-metrics-container {
+        padding: 1rem;
     }
 
-    @media (max-width: 768px) {
-        .fund-metrics-grid {
-            grid-template-columns: 1fr;
-        }
+    .metrics-section {
+        padding: 1rem;
     }
-        .dashboard-metrics-container {
-            max-width: 1350px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
 
-        .metrics-section {
-            background: #fff;
-            border-radius: 16px;
-            border: 1px solid #CDCDCD;
-            padding: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        }
+    .metrics-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-        .metrics-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
+    .about-fund {
+        grid-column: span 1;
+    }
 
-        .metrics-header h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1E293B;
-            margin: 0;
-            letter-spacing: -0.025em;
-        }
+    .metric-card {
+        padding: 1rem;
+    }
+}
 
-        .metrics-cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
+.data-table {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
 
-        .metric-card {
-            background: linear-gradient(to right, #FFFFFF, #F8FAFC);
-            border-radius: 12px;
-            border: 1px solid #CDCDCD;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-        }
+.data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-        .metric-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-        }
+.data-table th {
+    background-color: #f8fafc;
+    color: #1E293B;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid #CDCDCD;
+}
 
-        .metric-card h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #1E293B;
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--clr-ocean-blue);
-        }
+.data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+}
 
-        .metric-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid rgba(205, 205, 205, 0.5);
-        }
+.data-table tr:hover {
+    background-color: #f8fafc;
+}
 
-        .metric-item:last-child {
-            border-bottom: none;
-        }
+.about-content {
+    padding: 1rem;
+    color: #64748B;
+    line-height: 1.6;
+}
 
-        .metric-label {
-            color: #64748B;
-            font-size: 0.875rem;
-        }
-
-        .metric-value {
-            font-weight: 500;
-            color: #1E293B;
-            font-size: 0.875rem;
-        }
-
-        .metric-item a {
-            color: var(--clr-ocean-blue);
-            text-decoration: none;
-            transition: opacity 0.2s ease;
-        }
-
-        .metric-item a:hover {
-            opacity: 0.8;
-        }
-
-        .about-fund {
-            grid-column: span 4;
-            margin-top: 0.5rem;
-        }
-
-        .metric-description {
-            color: #64748B;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .metric-description p {
-            margin: 0;
-        }
-
-        @media (max-width: 1200px) {
-            .metrics-cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .about-fund {
-                grid-column: span 2;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .dashboard-metrics-container {
-                padding: 1rem;
-            }
-
-            .metrics-section {
-                padding: 1rem;
-            }
-
-            .metrics-cards {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .about-fund {
-                grid-column: span 1;
-            }
-
-            .metric-card {
-                padding: 1rem;
-            }
-        }
-
-        .data-table {
-            overflow-x: auto;
-            margin: 1rem 0;
-        }
-
-        .data-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .data-table th {
-            background-color: #f8fafc;
-            color: #1E293B;
-            font-weight: 600;
-            text-align: left;
-            padding: 1rem;
-            border-bottom: 2px solid #CDCDCD;
-        }
-
-        .data-table td {
-            padding: 1rem;
-            border-bottom: 1px solid rgba(205, 205, 205, 0.5);
-        }
-
-        .data-table tr:hover {
-            background-color: #f8fafc;
-        }
-
-        .about-content {
-            padding: 1rem;
-            color: #64748B;
-            line-height: 1.6;
-        }
-
-        .website-link {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(205, 205, 205, 0.5);
-        }
+.website-link {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(205, 205, 205, 0.5);
+}
