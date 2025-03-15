@@ -244,18 +244,20 @@
     }
 
     /* Table container */
-    .stock-table-main{
-        width: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-        position: relative;
-        background-color: #FFFFFF;
-        z-index: 1;
-    }
+.stock-table-main {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 1;
+    margin-bottom: 20px;
+}
 
-    .stock-table-main table{
-        width: 100%;
-    }
+.stock-table-main table {
+    width: 100%;
+    min-width: 800px; /* Ensures wide tables display properly */
+}
 
     /* Hide only company name column */
     .stock-table-main table thead th:nth-child(2),
