@@ -42,6 +42,11 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: var(--clr-ocean-blue);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 textarea, input, label {
@@ -2166,42 +2171,9 @@ footer {
     }
 }
 
-.table {
-    width: 100%;
-    margin-bottom: 0;
-    color: #212529;
-    border-collapse: collapse;
-}
-
-.table th {
-    padding: 12px 16px;
-    background-color: #f8f9fa;
-    border-bottom: 2px solid #dee2e6;
-    font-weight: 600;
-    text-align: left;
-    color: #495057;
-    font-size: 14px;
-}
-
-.table td {
-    padding: 12px 16px;
-    border-top: 1px solid #dee2e6;
-    font-size: 14px;
-    vertical-align: middle;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.02);
-}
-
-.table-hover tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-}
-
 .data-table {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin: 1rem 0;
 }
 
 .data-table table {
