@@ -1,24 +1,29 @@
-.stock-page{
+.stock-page {
     background-color: #FDFCFA;
 }
-.stock{
+
+.stock {
     margin: 20px 0;
- 
+
 }
-.stock p{
-        font-size: 1.125rem;
-        line-height: 1.7;
-        color: #475569;
-        margin-bottom: 1.5rem;
+
+.stock p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 1.5rem;
 }
-.stock  a{
+
+.stock a {
     color: var(--clr-ocean-blue);
 
 }
-.stock span{
+
+.stock span {
     color: var(--clr-ocean-blue);
     text-decoration: underline;
 }
+
 .stock-table {
     background-color: #FFFFFF;
     border-radius: 15px;
@@ -26,6 +31,7 @@
     border: 1px solid #CDCDCD;
     margin: 0 0 100px 0;
 }
+
 .stock-table-header {
     display: flex;
     padding: 20px 20px 10px 20px;
@@ -34,14 +40,14 @@
     border-bottom: 1px solid #CDCDCD;
 }
 
-.container h1
-{
+.container h1 {
     font-size: 30px;
     font-weight: 500;
     line-height: 29px;
     color: var(--dim-black);
 }
-.stock-table-header title{
+
+.stock-table-header title {
     display: flex;
     align-items: left;
     gap: 10px;
@@ -51,7 +57,8 @@
     cursor: pointer;
     color: var(--dim-black);
 }
-.stock-table-header form{
+
+.stock-table-header form {
     display: flex;
     align-items: center;
     width: 51%;
@@ -62,24 +69,27 @@
     border: 1px solid #CDCDCD;
 }
 
-.stock-filter .lists1{
+.stock-filter .lists1 {
     width: 70%;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.stock-filter .lists2{
+
+.stock-filter .lists2 {
     width: 30%;
     display: flex;
     justify-content: end;
 }
-.stock-table-header div{
+
+.stock-table-header div {
     display: flex;
     width: 60%;
     gap: 50px;
 
 }
-.stock-table-header form  input {
+
+.stock-table-header form input {
     height: 100%;
     width: 88%;
     font-size: 14px;
@@ -87,7 +97,8 @@
     line-height: 16.41px;
     color: var(--dim-black);
 }
-.stock-filter h1{
+
+.stock-filter h1 {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
@@ -101,53 +112,64 @@
     justify-content: center;
     gap: 8px;
 }
-.stock-filter{
+
+.stock-filter {
     display: flex;
     gap: 10px;
     padding: 15px 20px;
     align-items: center;
 }
-.stock-table table{
+
+.stock-table table {
     width: 100%;
 }
-.stock-table table  thead  th{
+
+.stock-table table thead th {
     padding: 15px;
     border: 1px solid #CDCDCD;
     text-align: center;
 }
-.stock-table table  thead{
+
+.stock-table table thead {
     background-color: #FDFCFA;
 }
-.stock-table table  thead  th:first-child{
+
+.stock-table table thead th:first-child {
     background-color: var(--white);
 }
-.stock-table table tbody tr td{
+
+.stock-table table tbody tr td {
     padding: 16px;
     border: 1px solid #CDCDCD;
     text-align: center;
 }
-.stock-table table  thead  th:last-child,
-.stock-table table tbody tr td:last-child{
+
+.stock-table table thead th:last-child,
+.stock-table table tbody tr td:last-child {
     border-right: none;
 }
-.stock-table table  thead  th:first-child,
-.stock-table table tbody tr td:first-child{
+
+.stock-table table thead th:first-child,
+.stock-table table tbody tr td:first-child {
     border-left: none;
     border-bottom: none;
     border-right: none;
 }
-.stock-table table  tbody tr:nth-child(20)  td:first-child{
+
+.stock-table table tbody tr:nth-child(20) td:first-child {
     border-bottom: 1px solid #CDCDCD;
 }
+
 .stock-table table tbody tr td a,
-.stock-table table  thead  th,
-.stock-table table tbody tr td{
+.stock-table table thead th,
+.stock-table table tbody tr td {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
     color: var(--dim-black);
 }
-.stock-table table tbody tr td a{
+
+.stock-table table tbody tr td a {
     text-decoration: underline;
     color: var(--clr-ocean-blue);
 }
@@ -160,22 +182,25 @@
 }
 
 
-.stock-table table  thead  th:first-child,
-.stock-table table tbody tr td:first-child{
+.stock-table table thead th:first-child,
+.stock-table table tbody tr td:first-child {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.stock-table table  thead  th:nth-child(4),
-.stock-table table tbody tr td:nth-child(4){
-   text-align: left;
+
+.stock-table table thead th:nth-child(4),
+.stock-table table tbody tr td:nth-child(4) {
+    text-align: left;
 
 }
-.stock-table table  thead  th:nth-child(2),
-.stock-table table  thead  th:nth-child(3),
-.stock-table table  thead  th:nth-child(5){
+
+.stock-table table thead th:nth-child(2),
+.stock-table table thead th:nth-child(3),
+.stock-table table thead th:nth-child(5) {
     padding-left: 25px;
 }
+
 .stock-table table tbody tr:nth-child(15) td:last-child,
 .stock-table table tbody tr:nth-child(16) td:last-child,
 .stock-table table tbody tr:nth-child(17) td:last-child,
@@ -186,9 +211,10 @@
 .stock-table table tbody tr:nth-child(7) td:last-child,
 .stock-table table tbody tr:nth-child(8) td:last-child,
 .stock-table table tbody tr:nth-child(2) td:last-child,
-.stock-table table tbody tr:nth-child(4) td:last-child{
+.stock-table table tbody tr:nth-child(4) td:last-child {
     color: var(--clr-emerald-green);
 }
+
 .stock-table table tbody tr:nth-child(19) td:last-child,
 .stock-table table tbody tr:nth-child(20) td:last-child,
 .stock-table table tbody tr:nth-child(5) td:nth-child(6),
@@ -196,15 +222,54 @@
 .stock-table table tbody tr:nth-child(9) td:last-child,
 .stock-table table tbody tr:nth-child(10) td:last-child,
 .stock-table table tbody tr:nth-child(11) td:last-child,
-.stock-table table tbody tr:nth-child(3) td:last-child{
+.stock-table table tbody tr:nth-child(3) td:last-child {
     color: var(--clr-fire-red);
 }
 
+/* Add these styles after your existing desktop styles but before the media queries */
 
+/* Make tables scrollable on all devices, not just mobile */
+.stock-table-main {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 1;
+    margin-bottom: 20px;
+}
 
-@media screen and (max-width: 767px){
+/* Ensure tables take full width inside the scrollable container */
+.stock-table-main table {
+    width: 100%;
+    min-width: 800px; /* Ensures wide tables display properly */
+}
+
+/* Make first column sticky on all devices, not just mobile */
+.stock-table-main table thead th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #FDFCFA !important;
+    z-index: 3;
+    box-shadow: 2px 0 5px -2px rgba(0,0,0,0.1);
+}
+
+.stock-table-main table tbody td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #FFFFFF !important;
+    z-index: 2;
+    box-shadow: 2px 0 5px -2px rgba(0,0,0,0.1);
+}
+
+/* Fix for hover effect on sticky columns */
+.stock-table-main table tbody tr:hover td:first-child {
+    background-color: #F8F9FA !important;
+}
+
+@media screen and (max-width: 767px) {
     /* Stock paragraph styling */
-    .stock p{
+    .stock p {
         width: 100%;
     }
 
@@ -218,18 +283,18 @@
     /* List widths */
     .lists1,
     .lists2,
-    .stock-table-header h1:first-child{
+    .stock-table-header h1:first-child {
         width: 100% !important;
     }
 
     /* Filter grid layout */
-    .stock-filter .lists1{
+    .stock-filter .lists1 {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* List alignment */
-    .stock-filter .lists2{
+    .stock-filter .lists2 {
         justify-content: flex-start;
     }
 
@@ -239,25 +304,23 @@
         justify-content: flex-start;
     }
 
-    .stock-table-header h1{
+    .stock-table-header h1 {
         font-size: 14px;
     }
 
     /* Table container */
-.stock-table-main {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    background-color: #FFFFFF;
-    z-index: 1;
-    margin-bottom: 20px;
-}
+    .stock-table-main {
+        width: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
 
-.stock-table-main table {
-    width: 100%;
-    min-width: 800px; /* Ensures wide tables display properly */
-}
+    .stock-table-main table {
+        width: 100%;
+    }
 
     /* Hide only company name column */
     .stock-table-main table thead th:nth-child(2),
@@ -271,7 +334,7 @@
         left: 0;
         background-color: #FDFCFA !important;
         z-index: 3;
-        box-shadow: 2px 0 5px -2px rgba(0,0,0,0.1);
+        box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.1);
         border-right: 1px solid #CDCDCD;
         border-bottom: 1px solid #CDCDCD;
         display: flex;
@@ -290,7 +353,7 @@
         left: 0;
         background-color: #FFFFFF !important;
         z-index: 2;
-        box-shadow: 2px 0 5px -2px rgba(0,0,0,0.1);
+        box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.1);
         border-right: 1px solid #CDCDCD;
         display: flex;
         align-items: center;
@@ -366,8 +429,8 @@
 }
 
 
-@media screen and (max-width: 380px){
-    .stock-filter .lists1{
-        grid-template-columns: repeat(2,1fr);
+@media screen and (max-width: 380px) {
+    .stock-filter .lists1 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
